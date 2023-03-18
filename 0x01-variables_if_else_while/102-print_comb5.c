@@ -6,23 +6,20 @@
 int main(void)
 {
 int i, j;
-for (i = 0; i < 100; i++)
+for (i = 0; i <= 9; i++)
 {
-for (j = i; j < 100; j++)
-{
-if (i != j)
+for (j = i + 1; j <= 98; j++)
 {
 putchar('0' + (i / 10));
 putchar('0' + (i % 10));
 putchar(' ');
 putchar('0' + (j / 10));
 putchar('0' + (j % 10));
-if (i != 99 || j != 98)
+if (i == 98 && j == 99)
 {
-putchar(',');
 putchar(' ');
 }
-}
+putchar(',');
 }
 }
 putchar('\n');
