@@ -2,8 +2,7 @@
 #include "main.h"
 /**
 * print_triangle - triagle form
-* @i: value
-* @j: value
+* @size: the size of the square
 * Return: 0 (Success)
 */
 void print_triangle(int size)
@@ -15,12 +14,19 @@ if (size <= 0)
 {
 _putchar('\n');
 }
-for (i = 1; i <= size; i++)
+else
 {
-for (j = 1; j <= i; j++)
+for (i = 1; i < size; i++)
 {
-_putchar('#');
+for (j = size - i; j > i; j++)
+{
+_putchar(32);
+}
+for (z = 0; z <= i; z++)
+{
+_putchar(35);
 }
 _putchar('\n');
+}
 }
 }
