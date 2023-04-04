@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *_strapa - Entry point
+ *_strspn - Entry point
  * @s: input
  * @accept : input
  */
-unsigned int _strapa(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, n, value, check;
 
